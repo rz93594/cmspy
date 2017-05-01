@@ -22,7 +22,7 @@ def getPolicy():
 	#content_u = content.decode("utf-8")
 	#content = content_u.encode("ascii","ignore")
 	#content = md.md_to_html(content)
-#	print content
+	print content
 	return content
 	
 
@@ -32,6 +32,7 @@ def getPolicy():
 @application.route("/")
 def hello():
     return "Hello World!"
+    getPolicy()
 
 if __name__ == "__main__":
     application.run()
