@@ -3,8 +3,8 @@ Flask
 requests
 ezmarkdown
 markdown
-ipython
-ipython-genutils
+ipython==5.3.0
+ipython-genutils==0.2.0
 Jinja2
 jsonschema
 jupyter-core
