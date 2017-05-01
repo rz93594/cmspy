@@ -22,4 +22,3 @@ simplegeneric
 six
 traitlets
 wcwidth
-win-unicode-console
