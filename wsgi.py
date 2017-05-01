@@ -32,8 +32,8 @@ def getPolicy():
 @application.route("/")
 def hello():
     getPolicy()
-    print "console hello"
-    print "content: %s" % content
+    print "Pulling content"
+    #print "content: %s" % content
     return content
 
 if __name__ == "__main__":
