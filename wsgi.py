@@ -36,7 +36,7 @@ def hello():
     lang = request.args.get('lang')
     if lang == "en-US":
 		lang == "2wXQlSZiq0mOGk2MgOw4CM"
-    elif lang = "en-ES":
+    elif lang == "en-ES":
 		lang == "4QQXiqQOVqyC8mu4S2Ow6u"
     else:
 	 	lang == "2wXQlSZiq0mOGk2MgOw4CM"
