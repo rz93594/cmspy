@@ -5,6 +5,7 @@ import json
 import ezmarkdown as md
 import urlparse
 from pprint import pprint
+import markdown2
 application = Flask(__name__)
 
 def getPolicy():
@@ -21,7 +22,8 @@ def getPolicy():
 	content =  htmlize.policy
 	#content_u = content.decode("utf-8")
 	#content = content_u.encode("ascii","ignore")
-	content = md.md_to_html(content)
+	#content = md.md_to_html(content)
+	content - markdown2.markdown(content)
 	print content
 	return content
 	
