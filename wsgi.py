@@ -35,6 +35,7 @@ def getPolicy(entry_id):
 
 @application.route("/")
 def hello():
+    lang = "0"
     lang = request.args.get('lang')
     print "lang set to = %s " % lang
     if lang == "en-US":
