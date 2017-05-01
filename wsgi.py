@@ -25,7 +25,8 @@ def getPolicy(entry_id):
 	#content = content_u.encode("ascii","ignore")
 	#content = md.md_to_html(content)
 	content = markdown2.markdown(content)
-	print content
+	#print content
+	print "entry_id = %s " % entry_id
 	return content
 	
 
@@ -35,6 +36,7 @@ def getPolicy(entry_id):
 @application.route("/")
 def hello():
     lang = request.args.get('lang')
+    print "lang set to = %s " % lang
     if lang == "en-US":
 		lang == "2wXQlSZiq0mOGk2MgOw4CM"
     elif lang == "en-ES":
