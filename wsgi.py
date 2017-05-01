@@ -23,7 +23,7 @@ def getPolicy():
 	#content_u = content.decode("utf-8")
 	#content = content_u.encode("ascii","ignore")
 	#content = md.md_to_html(content)
-	content - markdown2.markdown(content)
+	content = markdown2.markdown(content)
 	print content
 	return content
 	
