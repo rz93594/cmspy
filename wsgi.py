@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import request
-import includes
+from includes import *
+global ACCESS_KEY
 from BaseHTTPServer import BaseHTTPRequestHandler,HTTPServer
 import contentful
 import json 
@@ -11,8 +12,8 @@ import markdown2
 # list of region codes http://www.lingoes.net/en/translator/langcode.htm
 application = Flask(__name__)
 
-def getPolicy(entry_id):
-	client = contentful.Client('fu002ykhvufg', '809aae87325edb4f8c044500363ed3ce271a458785ac802f48d726cd50cd8213')
+def getPolicy(entry_id, ACCESS_KEY):
+	client = contentful.Client('fu002ykhvufg', ACCESS_KEY)
 	entries = client.entries()
 	entries = client.entries({'content_type': 'document'})
 
@@ -49,7 +50,7 @@ def hello():
 		lang = "4QQXiqQOVqyC8mu4S2Ow6u"
     else:
 	 	lang = "2wXQlSZiq0mOGk2MgOw4CM"
-    getPolicy(lang)
+    getPolicy(lang, ACCESS_KEY)
     print "Pulling content"
     #print "content: %s" % content
     return content
