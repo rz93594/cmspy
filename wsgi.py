@@ -31,10 +31,12 @@ def getPolicy():
 
 @application.route("/")
 def hello():
-    return "Hello World!"
+    getPolicy()
     print "console hello"
     print "content: %s" % content
-    getPolicy()
+    return content
+    
+    
     return content
 
 if __name__ == "__main__":
