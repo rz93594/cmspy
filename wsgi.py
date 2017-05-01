@@ -32,7 +32,7 @@ def getPolicy(entry_id):
 
 #getPolicy()
 
-@app.route('/')
+@application.route('/')
 def index():
     return 'Index Page'
 
