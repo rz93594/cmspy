@@ -7,6 +7,7 @@ import ezmarkdown as md
 import urlparse
 from pprint import pprint
 import markdown2
+# list of region codes http://www.lingoes.net/en/translator/langcode.htm
 application = Flask(__name__)
 
 def getPolicy(entry_id):
