@@ -32,6 +32,8 @@ def getPolicy():
 @application.route("/")
 def hello():
     return "Hello World!"
+    print "console hello"
+    print content
     getPolicy()
     return content
 
