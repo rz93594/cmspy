@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import request
+import includes
 from BaseHTTPServer import BaseHTTPRequestHandler,HTTPServer
 import contentful
 import json 
