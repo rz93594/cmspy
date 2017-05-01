@@ -8,7 +8,6 @@ ipython-genutils
 Jinja2
 jsonschema
 jupyter-core
-markdown
 MarkupSafe
 nbformat
 packaging
