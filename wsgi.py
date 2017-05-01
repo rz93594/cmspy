@@ -35,9 +35,6 @@ def hello():
     print "console hello"
     print "content: %s" % content
     return content
-    
-    
-    return content
 
 if __name__ == "__main__":
     application.run()
