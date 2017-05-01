@@ -12,8 +12,8 @@ def getPolicy():
 	entries = client.entries()
 	entries = client.entries({'content_type': 'document'})
 
-	entry_id = '2wXQlSZiq0mOGk2MgOw4CM'
-	#entry_id  = '7eYnixg5vaqWQQSe420MKy'
+	#entry_id = '2wXQlSZiq0mOGk2MgOw4CM'
+	entry_id  = '7eYnixg5vaqWQQSe420MKy'
 	htmlize = client.entry(entry_id)
 		
 	policy = client.entry(entry_id)
@@ -21,7 +21,7 @@ def getPolicy():
 	content =  htmlize.policy
 	#content_u = content.decode("utf-8")
 	#content = content_u.encode("ascii","ignore")
-	#content = md.md_to_html(content)
+	content = md.md_to_html(content)
 	print content
 	return content
 	
