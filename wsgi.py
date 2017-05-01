@@ -33,7 +33,7 @@ def getPolicy():
 def hello():
     return "Hello World!"
     print "console hello"
-    print content
+    print "content: %s" % content
     getPolicy()
     return content
 
