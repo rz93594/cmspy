@@ -3,6 +3,7 @@ Flask
 requests
 ezmarkdown
 markdown
+markdown2
 BeautifulSoup==3.2.1
 beautifulsoup4==4.5.3
 bs4==0.0.1
