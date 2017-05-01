@@ -1,7 +1,7 @@
 gunicorn
 Flask
 requests
-exmarkdown
+ezmarkdown
 markdown
 ipython
 ipython-genutils
