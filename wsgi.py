@@ -33,7 +33,7 @@ def getPolicy(entry_id):
 #getPolicy()
 
 
-@application.route("/")
+@application.route("/tos")
 def hello():
     lang = "0"
     lang = request.args.get('lang')
