@@ -32,6 +32,9 @@ def getPolicy(entry_id):
 
 #getPolicy()
 
+@app.route('/')
+def index():
+    return 'Index Page'
 
 @application.route("/tos")
 def hello():
