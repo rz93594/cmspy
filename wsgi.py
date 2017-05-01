@@ -33,6 +33,7 @@ def getPolicy():
 def hello():
     return "Hello World!"
     getPolicy()
+    return content
 
 if __name__ == "__main__":
     application.run()
