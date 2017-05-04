@@ -1,6 +1,6 @@
 gunicorn
 Flask
-codec
+codecs
 requests
 ezmarkdown
 markdown
