@@ -23,3 +23,6 @@ def hello_world():
     tos = html['fields']['policy']
     tos_html = markdown2.markdown(tos)
     return tos_html
+
+if __name__ == "__main__":
+    app.run()
