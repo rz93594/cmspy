@@ -4,7 +4,8 @@ This repository provides a sample Python web application implemented using the F
 
 ## Implementation Notes
 
-Openshift setup information for creating initial app framework can be found at https://developers.openshift.com/languages/python/flask.html
+Openshift setup information for creating initial app framework can be found at https://developers.openshift.com/languages/python/flask.html  
+
 This sample Python application relies on the support provided by the default S2I builder for deploying a WSGI application using the ``gunicorn`` WSGI server. The requirements which need to be satisfied for this to work are:
 
 * The WSGI application code file needs to be named ``wsgi.py``.
