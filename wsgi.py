@@ -25,4 +25,4 @@ def hello_world():
     return tos_html
 
 if __name__ == "__main__":
-    application.run()
+    application.run(debug = "True")
