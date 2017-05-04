@@ -6,9 +6,9 @@ import codecs
 import requests
 
 
-app = Flask(__name__)
+application = Flask(__name__)
 
-@app.route('/')
+@application.route('/')
 def hello_world():
     lang = 'es-ES'
     lang = request.args.get('lang')
@@ -25,4 +25,4 @@ def hello_world():
     return tos_html
 
 if __name__ == "__main__":
-    app.run()
+    application.run()
