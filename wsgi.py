@@ -37,7 +37,7 @@ def privacyPolicy():
     r = requests.get(url)
     html =  r.json()
     pp = html['fields']['terms']
-    pp = markdown2.markdown(tos)
+    pp = markdown2.markdown(pp)
     return pp
 
 
