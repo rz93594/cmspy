@@ -40,7 +40,9 @@ def privacyPolicy():
     pp = markdown2.markdown(pp)
     return pp
 
-
+@application.route('/')
+def root():
+	return "main page"
 
 
 
